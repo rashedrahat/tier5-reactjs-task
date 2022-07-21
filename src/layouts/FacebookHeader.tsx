@@ -8,7 +8,7 @@ import { GoSearch } from "react-icons/go";
 
 function FacebookHeader() {
   return (
-    <ul className="bg-facebook w-full h-10 flex items-center justify-around">
+    <ul className="bg-facebook-primary w-full h-10 flex items-center justify-around">
       <li className="border-b-2 border-white py-2">
         <BiNews size={20} color="white" className="cursor-pointer" />
       </li>

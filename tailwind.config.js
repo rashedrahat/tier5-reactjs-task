@@ -4,7 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        facebook: "#4267B2",
+        facebook: {
+          primary: "#4267B2",
+          light: "#E3E6E9",
+          normal: "#64676B",
+          dark: "#050505",
+        },
+      },
+      backgroundColor: () => ({
+        facebook: {
+          primary: "#4267B2",
+          light: "#E3E6E9",
+          normal: "#64676B",
+          dark: "#050505",
+        },
+      }),
+      height: {
+        18: "4.5rem",
       },
     },
     screens: {

@@ -1,0 +1,95 @@
+{
+  "user": {
+    "username": "joe-adam",
+    "name": "Joe Adam",
+    "profile_picture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+  },
+  "posts": [
+    {
+      "id": "8402678390264947303",
+      "user": {
+        "username": "adam",
+        "name": "Adam",
+        "profile_picture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+      },
+      "posted_on": "1617220982",
+      "description": "What a beautiful flower it is! Isn't it?",
+      "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
+      "likes": 10,
+      "liked": true,
+      "comments": [
+        {
+          "text": "Hello!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "adam",
+            "name": "Adam",
+            "profile_picture": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947304",
+      "user": {
+        "username": "jhonson",
+        "name": "Jhonson",
+        "profile_picture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+      },
+      "posted_on": "1617220982",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "image": "",
+      "likes": 5,
+      "liked": false,
+      "comments": []
+    },
+    {
+      "id": "8402678390264947304",
+      "user": {
+        "username": "adam",
+        "name": "Adam",
+        "profile_picture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+      },
+      "posted_on": "1617220982",
+      "description": "What a beautiful flower it is! Isn't it?",
+      "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
+      "likes": 10,
+      "liked": true,
+      "comments": [
+        {
+          "text": "Hello!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "adam",
+            "name": "Adam",
+            "profile_picture": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "8402678390264947305",
+      "user": {
+        "username": "adam",
+        "name": "Adam",
+        "profile_picture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+      },
+      "posted_on": "1617220982",
+      "description": "What a beautiful flower it is! Isn't it?",
+      "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
+      "likes": 10,
+      "liked": true,
+      "comments": [
+        {
+          "text": "Hello!",
+          "created_at": "1617220982",
+          "user": {
+            "username": "adam",
+            "name": "Adam",
+            "profile_picture": ""
+          }
+        }
+      ]
+    }
+  ]
+}
