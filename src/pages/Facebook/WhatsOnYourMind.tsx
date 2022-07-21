@@ -14,7 +14,7 @@ function WhatsOnYourMind({ profilePictureURL, name }: WhatsOnYourMindProps) {
         <Image
           srcURL={profilePictureURL}
           alt="Profile Picture"
-          className="rounded-full w-10 h-10"
+          className="rounded-full w-10 h-10 object-cover"
         />
         <TextArea
           className="bg-facebook-light w-full h-10 rounded-full resize-none border border-facebook-light py-3 md:py-2
