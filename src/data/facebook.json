@@ -1,7 +1,7 @@
 {
   "user": {
-    "username": "joe-adam",
-    "name": "Joe Adam",
+    "username": "joe",
+    "name": "Joe",
     "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
   },
   "posts": [
@@ -9,7 +9,7 @@
       "id": "8402678390264947303",
       "user": {
         "username": "adam",
-        "name": "Mr. Adam",
+        "name": "Adam",
         "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
       },
       "postedOn": 1658433268399,
@@ -19,12 +19,21 @@
       "liked": true,
       "comments": [
         {
-          "text": "Hello!",
-          "createdAt": "1617220982",
+          "text": "How are you!",
+          "createdAt": 1658480500227,
           "user": {
             "username": "adam",
             "name": "Adam",
             "profilePicture": ""
+          }
+        },
+        {
+          "text": "Hello buddy! Beautifull flower. ",
+          "createdAt": 1658480500227,
+          "user": {
+            "username": "jhonson",
+            "name": "Jhonson D Rock",
+            "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/2.jpg"
           }
         }
       ]
@@ -58,7 +67,7 @@
       "comments": [
         {
           "text": "Hello!",
-          "createdAt": "1617220982",
+          "createdAt": 1658480500227,
           "user": {
             "username": "adam",
             "name": "Adam",
@@ -82,7 +91,7 @@
       "comments": [
         {
           "text": "Hello!",
-          "createdAt": "1617220982",
+          "createdAt": 1658480500227,
           "user": {
             "username": "adam",
             "name": "Adam",

@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         facebook: {
-          primary: "#4267B2",
+          primary: "#1977F2",
           light: "#E3E6E9",
           normal: "#64676B",
           dark: "#050505",
@@ -13,7 +13,7 @@ module.exports = {
       },
       backgroundColor: () => ({
         facebook: {
-          primary: "#4267B2",
+          primary: "#1977F2",
           light: "#E3E6E9",
           normal: "#64676B",
           dark: "#050505",
@@ -34,5 +34,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [],
 };

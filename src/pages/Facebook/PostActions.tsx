@@ -5,9 +5,15 @@ import { RiShareForwardLine } from "react-icons/ri";
 
 type PostActionProps = {
   liked: boolean;
+  commentHandler: (show: boolean) => void;
+  proceedToComment: boolean;
 };
 
-function PostActions({ liked }: PostActionProps) {
+function PostActions({
+  liked,
+  commentHandler,
+  proceedToComment,
+}: PostActionProps) {
   return (
     <div className="flex items-center justify-around text-facebook-normal">
       <div
@@ -18,7 +24,11 @@ function PostActions({ liked }: PostActionProps) {
         {liked ? <AiFillLike size={18} /> : <AiOutlineLike size={18} />}
         <p>Like</p>
       </div>
-      <div className="flex gap-x-1 items-center cursor-pointer">
+      <div
+        className="flex gap-x-1 items-center cursor-pointer"
+        onClick={() => commentHandler(!proceedToComment)}
+        aria-hidden="true"
+      >
         <BiMessage size={18} className="mt-1" />
         <p>Comment</p>
       </div>

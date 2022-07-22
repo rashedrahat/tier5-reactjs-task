@@ -90,7 +90,11 @@ function Post({
         </div>
       </div>
       <hr className="mx-4" />
-      <PostActions liked={liked} />
+      <PostActions
+        liked={liked}
+        commentHandler={setShowComments}
+        proceedToComment={showComments}
+      />
       {showComments && (
         <PostComments data={comments} userProfilePiture={user.profilePicture} />
       )}
