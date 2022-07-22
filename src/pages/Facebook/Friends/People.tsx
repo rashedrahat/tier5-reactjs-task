@@ -8,9 +8,10 @@ type PeopleProps = {
   name: string;
   profilePicture: string;
   numOfMutualFrnd?: number;
+  type: "Friend" | "Not Friend";
 };
 
-function People({ name, profilePicture, numOfMutualFrnd }: PeopleProps) {
+function People({ name, profilePicture, numOfMutualFrnd, type }: PeopleProps) {
   return (
     <>
       <div className="flex items-center justify-between">
@@ -32,7 +33,7 @@ function People({ name, profilePicture, numOfMutualFrnd }: PeopleProps) {
             )}
           </div>
         </div>
-        {numOfMutualFrnd ? (
+        {type !== "Friend" ? (
           <div className="flex items-center justify-between gap-x-2">
             <div className="w-8 h-8 rounded-full bg-facebook-light flex justify-center items-center">
               <ImUserPlus className="fill-facebook-primary cursor-not-allowed" />

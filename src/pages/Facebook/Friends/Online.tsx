@@ -5,6 +5,7 @@ type User = {
   username: string;
   name: string;
   profilePicture: string;
+  numOfMutualFrnd: number;
 };
 
 type OnlineProps = {
@@ -27,8 +28,15 @@ function Online({ data }: OnlineProps) {
         ) : (
           <div className="flex flex-col gap-y-4">
             {data?.map((req) => {
-              const { name, profilePicture } = req;
-              return <People name={name} profilePicture={profilePicture} />;
+              const { name, profilePicture, numOfMutualFrnd } = req;
+              return (
+                <People
+                  name={name}
+                  profilePicture={profilePicture}
+                  numOfMutualFrnd={numOfMutualFrnd}
+                  type="Friend"
+                />
+              );
             })}
           </div>
         )}

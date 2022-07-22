@@ -42,6 +42,7 @@ function Requests({ data }: RequestsProps) {
                   name={name}
                   profilePicture={profilePicture}
                   numOfMutualFrnd={numOfMutualFrnd}
+                  type="Not Friend"
                 />
               );
             })}

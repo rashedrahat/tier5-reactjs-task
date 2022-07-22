@@ -132,22 +132,26 @@
       {
         "username": "adam",
         "name": "Adam",
-        "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+        "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg",
+        "numOfMutualFrnd": 5
       },
       {
         "username": "john",
         "name": "Joe",
-        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 5
       },
       {
         "username": "joe",
         "name": "Joe",
-        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 5
       },
       {
         "username": "joe",
         "name": "Joe",
-        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 5
       }
     ]
   }
