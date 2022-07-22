@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { AiFillLike } from "react-icons/ai";
 import helpers from "../../utils/helpers";
 import Image from "../../components/ui/Image";
 import PostActions from "./PostActions";
+import PostComments from "./PostComments";
 
 type User = {
   name: string;
@@ -31,6 +32,8 @@ function Post({
   liked,
   comments,
 }: PostProps) {
+  const [showComments, setShowComments] = useState<boolean>(false);
+
   return (
     <div
       className="bg-white w-auto h-auto rounded-lg shadow py-4 flex flex-col gap-y-2"
@@ -78,12 +81,19 @@ function Post({
             </div>
           )}
           {comments?.length > 0 && (
-            <p className="cursor-pointer">{`${comments.length} comments`}</p>
+            <p
+              className="cursor-pointer hover:underline"
+              onClick={() => setShowComments(!showComments)}
+              aria-hidden="true"
+            >{`${comments.length} comments`}</p>
           )}
         </div>
       </div>
       <hr className="mx-4" />
       <PostActions liked={liked} />
+      {showComments && (
+        <PostComments data={comments} userProfilePiture={user.profilePicture} />
+      )}
     </div>
   );
 }

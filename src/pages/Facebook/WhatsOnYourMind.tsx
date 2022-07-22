@@ -19,7 +19,7 @@ function WhatsOnYourMind({ profilePictureURL, name }: WhatsOnYourMindProps) {
         <TextArea
           className="bg-facebook-light w-full h-10 rounded-full resize-none border border-facebook-light py-3 md:py-2
         px-4 text-facebook-normal align-middle focus:outline-none focus:bg-white
-        focus:border-facebook-primary text-xs md:text-sm placeholder:text-facebook-normal"
+        focus:border-facebook-primary text-xs md:text-sm placeholder:text-facebook-normal scrollbar-hide"
           placeholder={`What's on your mind, ${name}?`}
         />
       </div>
