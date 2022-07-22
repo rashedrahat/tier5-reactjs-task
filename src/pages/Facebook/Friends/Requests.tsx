@@ -11,15 +11,16 @@ type User = {
 };
 
 type RequestsProps = {
+  heading: string;
   data: User[];
 };
 
-function Requests({ data }: RequestsProps) {
+function Requests({ heading, data }: RequestsProps) {
   return (
     <div className="flex flex-col gap-y-5 mx-3 md:mx-5 lg:mx-0">
       <div className="flex justify-between items-center">
         <p className="text-base md:text-lg lg:text-xl text-facebook-dark font-semibold">
-          Friend Requests
+          {heading}
         </p>
         <Link
           to={appRoutes.FACEBOOK_FRIENDS}

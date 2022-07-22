@@ -30,7 +30,8 @@ type MainContentProps = {
 function MainContent({ friends }: MainContentProps) {
   return (
     <>
-      <Requests data={friends.request} />
+      <Requests heading="Friends Requests" data={friends.request} />
+      <Requests heading="People you may know" data={friends.request} />
       <Online data={friends.online} />
     </>
   );
