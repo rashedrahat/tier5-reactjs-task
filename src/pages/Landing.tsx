@@ -7,7 +7,10 @@ function Landing() {
   return (
     <div className="flex items-center justify-center h-screen gap-x-5">
       <Link to={appRoutes.FACEBOOK}>
-        <FaFacebook size={48} className="cursor-pointer fill-facebook" />
+        <FaFacebook
+          size={48}
+          className="cursor-pointer fill-facebook-primary"
+        />
       </Link>
       <Link to={appRoutes.INSTAGRAM}>
         <FaInstagram size={48} className="cursor-pointer" />
