@@ -135,8 +135,9 @@ function Home() {
       <div className="hidden lg:block right-area">
         <div className="flex flex-col gap-y-3 py-5 pr-5">
           <Requests
-            data={friends.request.slice(0, 1)}
             heading="Friends Requests"
+            type="In"
+            data={friends.request.slice(0, 1)}
           />
           <Online data={friends.online} />
         </div>

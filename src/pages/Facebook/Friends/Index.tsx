@@ -1,6 +1,6 @@
 import React from "react";
 import { RiUserShared2Fill } from "react-icons/ri";
-import { FaUserClock, FaUserPlus } from "react-icons/fa";
+import { FaUserPlus } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillGift } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -30,9 +30,15 @@ type MainContentProps = {
 function MainContent({ friends }: MainContentProps) {
   return (
     <>
-      <Requests heading="Friends Requests" data={friends.request} />
-      <Requests heading="People you may know" data={friends.request} />
-      <Online data={friends.online} />
+      <Requests heading="Friends Requests" type="In" data={friends.request} />
+      <Requests
+        heading="People you may know"
+        type="Out"
+        data={friends.request}
+      />
+      <div className="block lg:hidden">
+        <Online data={friends.online} />
+      </div>
     </>
   );
 }
@@ -54,12 +60,6 @@ function Misc() {
               <FaUserPlus size={24} />
             </div>
             <Link to={appRoutes.FACEBOOK_FRIENDS}>Suggestions</Link>
-          </li>
-          <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
-            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
-              <FaUserClock size={24} />
-            </div>
-            <Link to={appRoutes.FACEBOOK_FRIENDS}>Online</Link>
           </li>
           <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
             <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
@@ -98,6 +98,11 @@ function Friends() {
       <div className="hidden lg:block">
         <div className="bg-white middle-area p-5 flex flex-col gap-y-5">
           <MainContent friends={friends} />
+        </div>
+      </div>
+      <div className="hidden lg:block right-area">
+        <div className="flex flex-col gap-y-3 py-5 px-5">
+          <Online data={friends.online} />
         </div>
       </div>
     </div>

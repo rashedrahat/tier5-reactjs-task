@@ -1,7 +1,8 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { FaFacebookMessenger, FaFacebook } from "react-icons/fa";
+import { FaFacebookMessenger, FaFacebook, FaUserTimes } from "react-icons/fa";
 import { ImUserPlus, ImUserMinus } from "react-icons/im";
+import { RiUserSharedFill } from "react-icons/ri";
 import Image from "../../../components/ui/Image";
 
 type PeopleProps = {
@@ -9,9 +10,16 @@ type PeopleProps = {
   profilePicture: string;
   numOfMutualFrnd?: number;
   type: "Friend" | "Not Friend";
+  reqType?: "In" | "Out";
 };
 
-function People({ name, profilePicture, numOfMutualFrnd, type }: PeopleProps) {
+function People({
+  name,
+  profilePicture,
+  numOfMutualFrnd,
+  type,
+  reqType,
+}: PeopleProps) {
   return (
     <>
       <div className="flex items-center justify-between">
@@ -36,10 +44,18 @@ function People({ name, profilePicture, numOfMutualFrnd, type }: PeopleProps) {
         {type !== "Friend" ? (
           <div className="flex items-center justify-between gap-x-2">
             <div className="w-8 h-8 rounded-full bg-facebook-light flex justify-center items-center">
-              <ImUserPlus className="fill-facebook-primary cursor-not-allowed" />
+              {reqType === "In" ? (
+                <ImUserPlus className="fill-facebook-primary cursor-not-allowed" />
+              ) : (
+                <RiUserSharedFill className="fill-facebook-primary cursor-not-allowed" />
+              )}
             </div>
             <div className="w-8 h-8 rounded-full bg-facebook-light flex justify-center items-center">
-              <ImUserMinus className="fill-red-500 cursor-not-allowed" />
+              {reqType === "In" ? (
+                <ImUserMinus className="fill-red-500 cursor-not-allowed" />
+              ) : (
+                <FaUserTimes className="fill-red-500 cursor-not-allowed" />
+              )}
             </div>
           </div>
         ) : (
