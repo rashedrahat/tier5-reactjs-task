@@ -1,0 +1,26 @@
+.left-area,
+.right-area {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.left-area {
+  left: 0;
+}
+
+.middle-area {
+  margin: 0 25%; /* Same as the width of the sidenav */ /* Same as the width of the sidenav */
+  width: 50%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.right-area {
+  right: 0;
+}
