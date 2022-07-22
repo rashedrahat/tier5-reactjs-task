@@ -5,6 +5,8 @@ import * as data from "../../../data/facebook.json";
 import Posts from "./Posts";
 import "../../../assets/facebook.css";
 import FacebookSidebar from "../../../layouts/FacebookSidebar";
+import Requests from "../Friends/Requests";
+import Online from "../Friends/Online";
 
 type MainContentProps = {
   name: string;
@@ -28,7 +30,7 @@ function MainContent({ name, profilePicture, posts }: MainContentProps) {
 }
 
 function Home() {
-  const { user, posts } = data;
+  const { user, posts, friends } = data;
 
   return (
     <div
@@ -57,7 +59,12 @@ function Home() {
           />
         </div>
       </div>
-      <div className="hidden lg:block right-area">3</div>
+      <div className="hidden lg:block right-area">
+        <div className="flex flex-col gap-y-3 py-5 pr-5">
+          <Requests data={friends.request.slice(0, 1)} />
+          <Online data={friends.online} />
+        </div>
+      </div>
     </div>
   );
 }

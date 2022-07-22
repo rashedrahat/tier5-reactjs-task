@@ -16,7 +16,7 @@ function Online({ data }: OnlineProps) {
   return (
     <div className="flex flex-col gap-y-5 mx-3 md:mx-5 lg:mx-0">
       <div className="flex justify-between items-center">
-        <p className="text-base md:text-lg lg:text-xl text-green-500 font-semibold">
+        <p className="text-base md:text-lg lg:text-xl text-green-600 font-semibold">
           Online - {data.length}
         </p>
       </div>
