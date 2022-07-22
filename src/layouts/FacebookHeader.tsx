@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle, FaBars } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { BiNews } from "react-icons/bi";
 import { RiMessengerLine } from "react-icons/ri";
@@ -30,6 +30,9 @@ function FacebookHeader() {
       </li>
       <li>
         <GoSearch size={20} color="white" className="cursor-pointer" />
+      </li>
+      <li>
+        <FaBars size={20} color="white" className="cursor-pointer" />
       </li>
     </ul>
   );
