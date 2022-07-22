@@ -6,6 +6,7 @@ import FacebookFriends from "./pages/Facebook/Friends/Index";
 import Instagram from "./pages/Instagram";
 import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
+import "./assets/facebook.css";
 
 function App() {
   return (

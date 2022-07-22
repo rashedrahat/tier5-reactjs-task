@@ -10,7 +10,6 @@ import FacebookHeader from "../../../layouts/FacebookHeader";
 import WhatsOnYourMind from "./WhatsOnYourMind";
 import * as data from "../../../data/facebook.json";
 import Posts from "./Posts";
-import "../../../assets/facebook.css";
 import FacebookSidebar from "../../../layouts/FacebookSidebar";
 import Requests from "../Friends/Requests";
 import Online from "../Friends/Online";
