@@ -7,7 +7,7 @@ type PostsProps = {
 
 function Posts({ data }: PostsProps) {
   return (
-    <div className="mx-2 md:mx-5 lg:mx-0">
+    <div className="mx-3 md:mx-5 lg:mx-0">
       {data?.length === 0 ? (
         <h1 className="text-facebook-normal text-lg md:text-2xl lg:text-3xl text-center">
           No posts found.

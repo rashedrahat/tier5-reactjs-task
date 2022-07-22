@@ -101,26 +101,58 @@
       ]
     }
   ],
-  "online": [
-    {
-      "username": "adam",
-      "name": "Adam",
-      "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
-    },
-    {
-      "username": "john",
-      "name": "Joe",
-      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
-    },
-    {
-      "username": "joe",
-      "name": "Joe",
-      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
-    },
-    {
-      "username": "joe",
-      "name": "Joe",
-      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
-    }
-  ]
+  "friends": {
+    "request": [
+      {
+        "username": "adam",
+        "name": "Adam",
+        "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg",
+        "numOfMutualFrnd": 5
+      },
+      {
+        "username": "john",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 1
+      },
+      {
+        "username": "joe",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 5
+      },
+      {
+        "username": "joe",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "numOfMutualFrnd": 5
+      }
+    ],
+    "online": [
+      {
+        "username": "adam",
+        "name": "Adam",
+        "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg",
+        "sentAt": 1658480500227
+      },
+      {
+        "username": "john",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "sentAt": 1658480500227
+      },
+      {
+        "username": "joe",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "sentAt": 1658480500227
+      },
+      {
+        "username": "joe",
+        "name": "Joe",
+        "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg",
+        "sentAt": 1658480500227
+      }
+    ]
+  }
 }

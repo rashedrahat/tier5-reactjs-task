@@ -6,7 +6,7 @@ import appRoutes from "../utils/routes";
 function Landing() {
   return (
     <div className="flex items-center justify-center h-screen gap-x-5">
-      <Link to={appRoutes.FACEBOOK}>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <FaFacebook
           size={48}
           className="cursor-pointer fill-facebook-primary"

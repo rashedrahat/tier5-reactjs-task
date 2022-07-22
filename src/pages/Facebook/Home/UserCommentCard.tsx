@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import Image from "../../components/ui/Image";
-import helpers from "../../utils/helpers";
+import Image from "../../../components/ui/Image";
+import helpers from "../../../utils/helpers";
 
 type UserCommentCardProps = {
   actionType: "Write" | "See";

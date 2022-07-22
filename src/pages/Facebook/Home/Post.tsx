@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { AiFillLike } from "react-icons/ai";
-import helpers from "../../utils/helpers";
-import Image from "../../components/ui/Image";
+import helpers from "../../../utils/helpers";
+import Image from "../../../components/ui/Image";
 import PostActions from "./PostActions";
 import PostComments from "./PostComments";
 

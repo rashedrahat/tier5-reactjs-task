@@ -1,10 +1,10 @@
 import React from "react";
-import FacebookHeader from "../../../layouts/FacebookHeader";
-import WhatsOnYourMind from "./WhatsOnYourMind";
-import * as data from "../../../data/facebook.json";
-import Posts from "./Posts";
+import FacebookHeader from "../../layouts/FacebookHeader";
+import WhatsOnYourMind from "./Home/WhatsOnYourMind";
+import * as data from "../../data/facebook.json";
+import Posts from "./Home/Posts";
 
-function Home() {
+function Facebook() {
   const { user, posts } = data;
 
   return (
@@ -27,4 +27,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Facebook;
