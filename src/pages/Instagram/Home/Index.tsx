@@ -10,7 +10,7 @@ function Home() {
   return (
     <div style={{ backgroundColor: "#FAFAFA" }}>
       <InstagramHeader profilePicture={user.profilePicture} />
-      <div className="container mx-auto md:py-5">
+      <div className="container mx-auto md:py-5 mt-14 md:mt-16">
         <div className="flex justify-center gap-x-5">
           <div className="h-screen w-full md:w-1/2">
             <Stories currUserAvatar={user.profilePicture} data={stories} />

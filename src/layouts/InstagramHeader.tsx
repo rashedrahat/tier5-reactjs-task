@@ -95,7 +95,7 @@ type InstagramHeaderProps = {
 
 function InstagramHeader({ profilePicture }: InstagramHeaderProps) {
   return (
-    <div className="sticky top-0">
+    <div className="fixed top-0 w-full z-1">
       <div className="bg-white shadow w-full h-14 flex md:hidden items-center">
         <NavLinks profilePicture={profilePicture} />
       </div>

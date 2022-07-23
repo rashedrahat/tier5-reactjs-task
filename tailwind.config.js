@@ -32,6 +32,9 @@ module.exports = {
       height: {
         18: "4.5rem",
       },
+      zIndex: {
+        1: "1",
+      },
     },
     screens: {
       md: "768px",
