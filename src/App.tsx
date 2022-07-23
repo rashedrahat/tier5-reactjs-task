@@ -7,6 +7,7 @@ import InstagramHome from "./pages/Instagram/Home/Index";
 import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
 import "./assets/facebook.css";
+import "./assets/instagram.css";
 
 function App() {
   return (

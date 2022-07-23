@@ -15,7 +15,7 @@ type StoriesProps = {
 
 function Stories({ currUserAvatar, data }: StoriesProps) {
   return (
-    <div className="flex w-full border-b md:border border-gray-300 md:rounded h-auto p-4 gap-x-4">
+    <div className="flex w-full border-b md:border border-gray-300 md:rounded-lg h-auto p-4 gap-x-4">
       <Story
         readonly={false}
         accountName="Your story"
