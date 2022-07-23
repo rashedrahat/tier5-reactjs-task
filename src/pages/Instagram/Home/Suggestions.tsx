@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from "../../../components/ui/Image";
 import appRoutes from "../../../utils/routes";
+import UserCard from "./UserCard";
 
 type User = {
   username: string;
@@ -12,34 +12,6 @@ type User = {
 type SuggestionsProps = {
   data: User[];
 };
-
-function People({ username, name, profilePicture }: User) {
-  return (
-    <div className="flex items-center justify-between">
-      <div className="flex items-center gap-x-4">
-        <Image
-          srcURL={profilePicture}
-          alt="Profile Picture"
-          className="rounded-full w-10 h-10 object-cover"
-        />
-        <div className="flex flex-col items-start">
-          <p className="text-sm font-semibold text-instagram-primary">
-            {username}
-          </p>
-          <p className="text-sm font-normal text-instagram-secondary">{name}</p>
-        </div>
-      </div>
-      <div>
-        <button
-          type="button"
-          className="text-sm text-instagram-blue font-semibold cursor-not-allowed"
-        >
-          Follow
-        </button>
-      </div>
-    </div>
-  );
-}
 
 function Suggestions({ data }: SuggestionsProps) {
   return (
@@ -59,10 +31,11 @@ function Suggestions({ data }: SuggestionsProps) {
         {data?.map((user) => {
           const { username, name, profilePicture } = user;
           return (
-            <People
+            <UserCard
               username={username}
               name={name}
               profilePicture={profilePicture}
+              actionName="Follow"
             />
           );
         })}
