@@ -2,7 +2,7 @@ const appRoutes = {
   LANDING: "/",
   FACEBOOK_HOME: "/facebook",
   FACEBOOK_FRIENDS: "/facebook/friends",
-  INSTAGRAM: "/instagram",
+  INSTAGRAM_HOME: "/instagram",
 };
 
 export default appRoutes;

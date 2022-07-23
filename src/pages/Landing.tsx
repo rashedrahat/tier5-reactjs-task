@@ -12,7 +12,7 @@ function Landing() {
           className="cursor-pointer fill-facebook-primary"
         />
       </Link>
-      <Link to={appRoutes.INSTAGRAM}>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
         <FaInstagram size={48} className="cursor-pointer" />
       </Link>
     </div>

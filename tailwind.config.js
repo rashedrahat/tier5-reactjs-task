@@ -10,6 +10,11 @@ module.exports = {
           normal: "#64676B",
           dark: "#050505",
         },
+        instagram: {
+          primary: "#262626",
+          secondary: "#8E8E8E",
+          tertiary: "#64676B",
+        },
       },
       backgroundColor: () => ({
         facebook: {
@@ -17,6 +22,11 @@ module.exports = {
           light: "#E3E6E9",
           normal: "#64676B",
           dark: "#050505",
+        },
+        instagram: {
+          primary: "#262626",
+          secondary: "#8E8E8E",
+          tertiary: "#64676B",
         },
       }),
       height: {
