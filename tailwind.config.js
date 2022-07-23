@@ -14,6 +14,7 @@ module.exports = {
           primary: "#262626",
           secondary: "#8E8E8E",
           tertiary: "#64676B",
+          blue: "#0095F6",
         },
       },
       backgroundColor: () => ({
@@ -27,6 +28,7 @@ module.exports = {
           primary: "#262626",
           secondary: "#8E8E8E",
           tertiary: "#64676B",
+          blue: "#0095F6",
         },
       }),
       height: {

@@ -23,7 +23,7 @@ function Story({ readonly, accountName, accountAvatarURL }: StoryProps) {
         />
         {!readonly && (
           <div className="absolute rounded-full bottom-1 right-1 flex items-center justify-center bg-white w-5 h-5">
-            <FaPlusCircle className="w-4 h-4 fill-facebook-primary" />
+            <FaPlusCircle className="w-4 h-4 fill-instagram-blue" />
           </div>
         )}
       </div>
