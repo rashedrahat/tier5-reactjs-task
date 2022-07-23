@@ -256,5 +256,32 @@
     "username": "imjoeroot",
     "name": "Joe Root",
     "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
-  }
+  },
+  "suggestions": [
+    {
+      "username": "adam",
+      "name": "Adam",
+      "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+    },
+    {
+      "username": "john",
+      "name": "Joe",
+      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+    },
+    {
+      "username": "joe",
+      "name": "Joe",
+      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+    },
+    {
+      "username": "john",
+      "name": "Joe",
+      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+    },
+    {
+      "username": "joe",
+      "name": "Joe",
+      "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/38.jpg"
+    }
+  ]
 }

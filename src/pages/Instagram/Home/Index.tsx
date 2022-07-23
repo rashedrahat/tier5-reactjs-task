@@ -4,9 +4,10 @@ import InstagramHeader from "../../../layouts/InstagramHeader";
 import Stories from "./Stories";
 import * as data from "../../../data/instagram.json";
 import AccountSwitch from "./AccountSwitch";
+import Suggestions from "./Suggestions";
 
 function Home() {
-  const { user, stories } = data;
+  const { user, stories, suggestions } = data;
 
   return (
     <div style={{ backgroundColor: "#FAFAFA" }}>
@@ -17,9 +18,13 @@ function Home() {
             <div className="w-full md:w-7/12">
               <Stories currUserAvatar={user.profilePicture} data={stories} />
             </div>
-            <div className="hidden md:flex flex-col w-5/12">
+            <div className="hidden md:flex flex-col w-5/12 gap-y-5">
               <AccountSwitch currUser={user} />
-              <div>2</div>
+              {suggestions?.length > 0 && <Suggestions data={suggestions} />}
+              <hr />
+              <p className="text-xs text-instagram-secondary font-light">
+                © 2022 INSTAGRAM FROM META
+              </p>
             </div>
           </div>
         </div>

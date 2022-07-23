@@ -27,7 +27,7 @@ function AccountSwitch({ currUser }: AccountSwitchProps) {
           <p className="text-base font-semibold text-instagram-primary">
             {username}
           </p>
-          <p className="text-base font-semibold text-instagram-secondary">
+          <p className="text-base font-normal text-instagram-secondary">
             {name}
           </p>
         </div>
