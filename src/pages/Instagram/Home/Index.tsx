@@ -11,14 +11,16 @@ function Home() {
   return (
     <div style={{ backgroundColor: "#FAFAFA" }}>
       <InstagramHeader profilePicture={user.profilePicture} />
-      <div className="container mx-auto md:py-5 mt-14 md:mt-16">
-        <div className="flex justify-center md:gap-x-5 lg:gap-x-10">
-          <div className="h-screen w-full md:w-1/2">
-            <Stories currUserAvatar={user.profilePicture} data={stories} />
-          </div>
-          <div className="hidden md:flex flex-col h-screen w-1/2">
-            <AccountSwitch currUser={user} />
-            <div>2</div>
+      <div className="h-auto md:py-8 mt-14 md:mt-16">
+        <div className="flex justify-center">
+          <div className="flex w-full h-auto md:w-10/12 lg:w-7/12 md:gap-x-5 lg:gap-x-10">
+            <div className="w-full md:w-7/12">
+              <Stories currUserAvatar={user.profilePicture} data={stories} />
+            </div>
+            <div className="hidden md:flex flex-col w-5/12">
+              <AccountSwitch currUser={user} />
+              <div>2</div>
+            </div>
           </div>
         </div>
       </div>
