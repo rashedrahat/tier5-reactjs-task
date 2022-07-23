@@ -36,7 +36,11 @@ function SearchBar() {
   );
 }
 
-function NavLinks() {
+type NavLinksProps = {
+  profilePicture: string;
+};
+
+function NavLinks({ profilePicture }: NavLinksProps) {
   return (
     <ul className="flex justify-around w-full md:w-auto md:gap-x-4">
       <li>
@@ -74,7 +78,10 @@ function NavLinks() {
         </Link>
       </li>
       <Image
-        srcURL="https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
+        srcURL={
+          profilePicture ||
+          "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
+        }
         alt="Profile Picture"
         className="rounded-full w-7 h-7 object-cover"
       />
@@ -82,11 +89,15 @@ function NavLinks() {
   );
 }
 
-function InstagramHeader() {
+type InstagramHeaderProps = {
+  profilePicture: string;
+};
+
+function InstagramHeader({ profilePicture }: InstagramHeaderProps) {
   return (
     <div className="sticky top-0">
       <div className="bg-white shadow w-full h-14 flex md:hidden items-center">
-        <NavLinks />
+        <NavLinks profilePicture={profilePicture} />
       </div>
       <div className="bg-white shadow hidden md:flex justify-evenly items-center w-full h-16">
         <Image
@@ -95,7 +106,7 @@ function InstagramHeader() {
           className="w-auto h-10"
         />
         <SearchBar />
-        <NavLinks />
+        <NavLinks profilePicture={profilePicture} />
       </div>
     </div>
   );
