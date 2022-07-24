@@ -4,6 +4,7 @@ import helpers from "../../../utils/helpers";
 import Image from "../../../components/ui/Image";
 import PostActions from "./PostActions";
 import AddComment from "./AddComment";
+import PostComments from "./PostComments";
 
 type User = {
   username: string;
@@ -91,14 +92,19 @@ function Post({
           </p>
         )}
         {comments?.length > 0 && (
-          <p className="text-sm text-instagram-secondary font-semibold cursor-pointer">{`View all ${
-            comments.length
-          } ${comments?.length > 1 ? `comments` : `comments`}`}</p>
+          <p
+            className="text-sm text-instagram-secondary font-semibold cursor-pointer"
+            onClick={() => setShowComments(!showComments)}
+            aria-hidden="true"
+          >{`${showComments ? `Hide` : `View`} all ${comments.length} ${
+            comments?.length > 1 ? `comments` : `comments`
+          }`}</p>
         )}
         <p className="text-xs text-instagram-secondary font-normal uppercase">
           {helpers.formatTheDateInRelativeTime(postedOn, "day")}
         </p>
       </div>
+      {showComments && <PostComments data={comments} />}
       <AddComment />
     </div>
   );
