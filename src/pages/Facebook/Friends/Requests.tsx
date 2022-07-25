@@ -1,19 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { PeopleProps } from "../../../types/facebook";
 import appRoutes from "../../../utils/routes";
 import People from "./People";
-
-type User = {
-  username: string;
-  name: string;
-  profilePicture: string;
-  numOfMutualFrnd: number;
-};
 
 type RequestsProps = {
   heading: string;
   type: "In" | "Out";
-  data: User[];
+  data: PeopleProps[];
 };
 
 function Requests({ heading, type, data }: RequestsProps) {

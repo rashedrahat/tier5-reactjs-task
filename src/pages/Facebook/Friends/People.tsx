@@ -4,14 +4,7 @@ import { FaFacebookMessenger, FaFacebook, FaUserTimes } from "react-icons/fa";
 import { ImUserPlus, ImUserMinus } from "react-icons/im";
 import { RiUserSharedFill } from "react-icons/ri";
 import Image from "../../../components/ui/Image";
-
-type PeopleProps = {
-  name: string;
-  profilePicture: string;
-  numOfMutualFrnd?: number;
-  type: "Friend" | "Not Friend";
-  reqType?: "In" | "Out";
-};
+import { PeopleProps } from "../../../types/facebook";
 
 function People({
   name,

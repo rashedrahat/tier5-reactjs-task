@@ -1,15 +1,9 @@
 import React from "react";
+import { PeopleProps } from "../../../types/facebook";
 import People from "./People";
 
-type User = {
-  username: string;
-  name: string;
-  profilePicture: string;
-  numOfMutualFrnd: number;
-};
-
 type OnlineProps = {
-  data: User[];
+  data: PeopleProps[];
 };
 
 function Online({ data }: OnlineProps) {
