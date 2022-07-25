@@ -4,7 +4,7 @@ import { AiFillLike } from "react-icons/ai";
 import helpers from "../../../utils/helpers";
 import Image from "../../../components/ui/Image";
 import PostActions from "../../../components/social/PostActions";
-import PostComments from "./PostComments";
+import PostComments from "../../../components/social/PostComments";
 import Card from "../../../components/ui/Card";
 import { PostProps } from "../../../types/global";
 
@@ -100,7 +100,11 @@ function BottomContentOfCard({
         proceedToComment={showComments}
       />
       {showComments && (
-        <PostComments data={comments} userProfilePiture={profilePicture} />
+        <PostComments
+          forWhich="Facebook"
+          data={comments}
+          userProfilePiture={profilePicture}
+        />
       )}
     </>
   );

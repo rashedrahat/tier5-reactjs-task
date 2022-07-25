@@ -4,7 +4,7 @@ import helpers from "../../../utils/helpers";
 import Image from "../../../components/ui/Image";
 import PostActions from "../../../components/social/PostActions";
 import AddComment from "./AddComment";
-import PostComments from "./PostComments";
+import PostComments from "../../../components/social/PostComments";
 import Card from "../../../components/ui/Card";
 import { User, PostProps } from "../../../types/global";
 
@@ -107,7 +107,7 @@ function BottomContentOfCard({
           {helpers.formatTheDateInRelativeTime(postedOn, "day")}
         </p>
       </div>
-      {showComments && <PostComments data={comments} />}
+      {showComments && <PostComments forWhich="Instagram" data={comments} />}
       <AddComment />
     </>
   );

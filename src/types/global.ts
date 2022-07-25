@@ -37,9 +37,27 @@ export type PostProps = {
   comments: any[];
 };
 
-export type PostActionProps = {
+type SocialPlatform = {
   forWhich?: "Facebook" | "Instagram";
+};
+
+export type PostActionProps = SocialPlatform & {
   liked: boolean;
   commentHandler: (show: boolean) => void;
   proceedToComment: boolean;
+};
+
+export type PostCommentsProps = SocialPlatform & {
+  userProfilePiture?: string;
+  data: any[];
+};
+
+export type UserCommentBoxProps = SocialPlatform & {
+  actionType?: "Write" | "See";
+  userProfilePictureURL: string;
+  userName?: string;
+  comment: string;
+  commentedAt?: number;
+  boxClass: string;
+  userProfilePitureClass: string;
 };
