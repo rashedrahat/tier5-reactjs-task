@@ -36,3 +36,10 @@ export type PostProps = {
   liked: boolean;
   comments: any[];
 };
+
+export type PostActionProps = {
+  forWhich?: "Facebook" | "Instagram";
+  liked: boolean;
+  commentHandler: (show: boolean) => void;
+  proceedToComment: boolean;
+};

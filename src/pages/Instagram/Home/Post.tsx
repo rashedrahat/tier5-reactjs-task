@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import helpers from "../../../utils/helpers";
 import Image from "../../../components/ui/Image";
-import PostActions from "./PostActions";
+import PostActions from "../../../components/social/PostActions";
 import AddComment from "./AddComment";
 import PostComments from "./PostComments";
 import Card from "../../../components/ui/Card";
@@ -78,6 +78,7 @@ function BottomContentOfCard({
   return (
     <>
       <PostActions
+        forWhich="Instagram"
         liked={liked}
         commentHandler={setShowComments}
         proceedToComment={showComments}

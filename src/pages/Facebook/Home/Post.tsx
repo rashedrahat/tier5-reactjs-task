@@ -3,7 +3,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { AiFillLike } from "react-icons/ai";
 import helpers from "../../../utils/helpers";
 import Image from "../../../components/ui/Image";
-import PostActions from "./PostActions";
+import PostActions from "../../../components/social/PostActions";
 import PostComments from "./PostComments";
 import Card from "../../../components/ui/Card";
 import { PostProps } from "../../../types/global";
@@ -94,6 +94,7 @@ function BottomContentOfCard({
       </div>
       <hr className="mx-4" />
       <PostActions
+        forWhich="Facebook"
         liked={liked}
         commentHandler={setShowComments}
         proceedToComment={showComments}
