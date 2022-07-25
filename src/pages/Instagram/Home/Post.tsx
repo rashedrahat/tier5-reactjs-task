@@ -5,42 +5,21 @@ import Image from "../../../components/ui/Image";
 import PostActions from "./PostActions";
 import AddComment from "./AddComment";
 import PostComments from "./PostComments";
+import Card from "../../../components/ui/Card";
+import { User, PostProps } from "../../../types/global";
 
-type User = {
-  username: string;
-  hasStory: boolean;
-  profilePicture: string;
-};
-
-type PostProps = {
-  id: string;
-  user: User;
-  description: string;
+type TopContentOfCardProps = User & {
   image: string;
-  postedOn: number;
-  likes: number;
-  liked: boolean;
-  comments: any[];
 };
 
-function Post({
-  id,
-  user,
-  description,
+function TopContentOfCard({
+  hasStory,
+  profilePicture,
+  username,
   image,
-  postedOn,
-  likes,
-  liked,
-  comments,
-}: PostProps) {
-  const [showComments, setShowComments] = useState<boolean>(false);
-  const { hasStory, profilePicture, username } = user;
-
+}: TopContentOfCardProps) {
   return (
-    <div
-      className="bg-white w-full h-auto md:border border-gray-300 md:rounded-lg py-3 flex flex-col gap-y-3 shadow-sm md:shadow-none"
-      key={id}
-    >
+    <>
       <div className="flex justify-between items-center w-full h-9 px-4">
         <div className="flex justify-between gap-x-3 items-center">
           <div
@@ -75,6 +54,29 @@ function Post({
           />
         )}
       </div>
+    </>
+  );
+}
+
+type BottomContentOfCardProps = {
+  description: string;
+  postedOn: number;
+  likes: number;
+  liked: boolean;
+  comments: any[];
+};
+
+function BottomContentOfCard({
+  description,
+  postedOn,
+  likes,
+  liked,
+  comments,
+}: BottomContentOfCardProps) {
+  const [showComments, setShowComments] = useState<boolean>(false);
+
+  return (
+    <>
       <PostActions
         liked={liked}
         commentHandler={setShowComments}
@@ -106,7 +108,67 @@ function Post({
       </div>
       {showComments && <PostComments data={comments} />}
       <AddComment />
-    </div>
+    </>
+  );
+}
+
+function CardContent({
+  user,
+  description,
+  image,
+  postedOn,
+  likes,
+  liked,
+  comments,
+}: PostProps) {
+  const { name, username, profilePicture } = user;
+  return (
+    <>
+      <TopContentOfCard
+        name={name}
+        profilePicture={profilePicture}
+        image={image}
+        username={username}
+      />
+      <BottomContentOfCard
+        description={description}
+        postedOn={postedOn}
+        likes={likes}
+        liked={liked}
+        comments={comments}
+      />
+    </>
+  );
+}
+
+function Post({
+  id,
+  user,
+  description,
+  image,
+  postedOn,
+  likes,
+  liked,
+  comments,
+}: PostProps) {
+  return (
+    <Card
+      id={id}
+      className="bg-white w-full h-auto md:border border-gray-300 md:rounded-lg py-3 flex flex-col gap-y-3 shadow-sm md:shadow-none"
+      key={id}
+      content={
+        <CardContent
+          id={id}
+          user={user}
+          description={description}
+          image={image}
+          postedOn={postedOn}
+          likes={likes}
+          liked={liked}
+          comments={comments}
+        />
+      }
+    />
   );
 }
 

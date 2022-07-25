@@ -28,10 +28,7 @@ function Posts({ data }: PostsProps) {
             return (
               <Post
                 id={id}
-                user={{
-                  name: user.name,
-                  profilePicture: user.profilePicture,
-                }}
+                user={user}
                 description={description}
                 image={image}
                 postedOn={postedOn}

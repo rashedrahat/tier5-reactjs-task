@@ -12,3 +12,27 @@ export type ButtonProps = {
   name: string;
   onClick: () => void;
 };
+
+export type CardProps = {
+  id: string | number;
+  className: string;
+  content: React.ReactNode;
+};
+
+export type User = {
+  name: string;
+  username: string;
+  profilePicture: string;
+  hasStory?: boolean;
+};
+
+export type PostProps = {
+  id: string;
+  user: User;
+  description: string;
+  image: string;
+  postedOn: number;
+  likes: number;
+  liked: boolean;
+  comments: any[];
+};
