@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdHomeFilled, MdOutlineExplore } from "react-icons/md";
 import { FiSend, FiHeart } from "react-icons/fi";
 import { TbSquarePlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import appRoutes from "../utils/routes";
 import Image from "../components/ui/Image";
+import Input from "../components/form/Input";
 
 function SearchBar() {
+  const [query, setQuery] = useState<string>("");
+
   return (
     <form className="flex items-center">
       <div className="relative w-full h-9">
@@ -25,11 +28,12 @@ function SearchBar() {
             />
           </svg>
         </div>
-        <input
-          type="text"
-          id="simple-search"
+        <Input
           className=" bg-gray-200 border-none text-instagram-primary text-sm rounded-lg block w-full pl-10 p-2 focus:outline-none"
+          type="text"
           placeholder="Search"
+          value={query}
+          onChange={setQuery}
         />
       </div>
     </form>

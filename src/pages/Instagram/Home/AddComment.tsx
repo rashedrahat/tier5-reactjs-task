@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Input from "../../../components/form/Input";
+import Button from "../../../components/ui/Button";
 import Image from "../../../components/ui/Image";
 
 function AddComment() {
@@ -12,23 +14,23 @@ function AddComment() {
           alt="Profile Picture"
           className="w-6 h-6 object-cover rounded-full"
         />
-        <input
+        <Input
           className="border-none w-full py-2 placeholder:text-instagram-secondary text-instagram-primary text-base focus:outline-none"
           type="text"
           placeholder="Add a comment..."
           value={comment}
-          onChange={(e) => setComment(e.target.value)}
+          onChange={setComment}
         />
       </div>
-      <button
-        disabled={comment === ""}
-        type="button"
+      <Button
         className={`text-base font-semibold text-instagram-blue ${
           comment ? `` : `opacity-50`
         }`}
-      >
-        Post
-      </button>
+        disabled={comment === ""}
+        name="Post"
+        // eslint-disable-next-line no-console
+        onClick={() => console.log("Clicked")}
+      />
     </div>
   );
 }
