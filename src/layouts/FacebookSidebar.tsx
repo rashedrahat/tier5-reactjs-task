@@ -5,7 +5,9 @@ import { IoNotifications } from "react-icons/io5";
 import { HiUsers, HiUserGroup } from "react-icons/hi";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
+import { Link } from "react-router-dom";
 import Image from "../components/ui/Image";
+import appRoutes from "../utils/routes";
 
 type FacebookSidebarProps = {
   profilePicture: string;
@@ -13,8 +15,8 @@ type FacebookSidebarProps = {
 
 function FacebookSidebar({ profilePicture }: FacebookSidebarProps) {
   return (
-    <ul className="bg-white w-16 h-full flex flex-col items-center gap-y-5 pt-5">
-      <li>
+    <nav className="bg-white w-16 h-full flex flex-col items-center gap-y-5 pt-5">
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <Image
           srcURL={
             profilePicture ||
@@ -23,47 +25,47 @@ function FacebookSidebar({ profilePicture }: FacebookSidebarProps) {
           alt="Profile Picture"
           className="rounded-full w-9 h-9 object-cover"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <AiFillHome
           size={24}
           className="cursor-pointer fill-facebook-primary"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_FRIENDS}>
         <HiUsers size={24} className="cursor-pointer fill-facebook-dark" />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <FaFacebookMessenger
           size={24}
           className="cursor-pointer fill-facebook-dark"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <IoNotifications
           size={24}
           className="cursor-pointer fill-facebook-dark"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <FaSearch size={24} className="cursor-pointer fill-facebook-dark" />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <BsGrid3X3GapFill
           size={24}
           className="cursor-pointer fill-facebook-dark"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <SiHomeassistantcommunitystore
           size={24}
           className="cursor-pointer fill-facebook-dark"
         />
-      </li>
-      <li>
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
         <HiUserGroup size={24} className="cursor-pointer fill-facebook-dark" />
-      </li>
-    </ul>
+      </Link>
+    </nav>
   );
 }
 

@@ -46,50 +46,39 @@ type NavLinksProps = {
 
 function NavLinks({ profilePicture }: NavLinksProps) {
   return (
-    <ul className="flex justify-around w-full md:w-auto md:gap-x-4">
-      <li>
-        <Link to={appRoutes.INSTAGRAM_HOME}>
-          <MdHomeFilled size={28} className="cursor-pointer" />
-        </Link>
-      </li>
-      <li>
-        <Link to={appRoutes.INSTAGRAM_HOME}>
-          <FiSend size={28} className="cursor-pointer text-instagram-primary" />
-        </Link>
-      </li>
-      <li>
-        <Link to={appRoutes.INSTAGRAM_HOME}>
-          <TbSquarePlus
-            size={28}
-            className="cursor-pointer text-instagram-primary"
-          />
-        </Link>
-      </li>
-      <li>
-        <Link to={appRoutes.INSTAGRAM_HOME}>
-          <MdOutlineExplore
-            size={28}
-            className="cursor-pointer text-instagram-primary"
-          />
-        </Link>
-      </li>
-      <li>
-        <Link to={appRoutes.INSTAGRAM_HOME}>
-          <FiHeart
-            size={28}
-            className="cursor-pointer text-instagram-primary"
-          />
-        </Link>
-      </li>
-      <Image
-        srcURL={
-          profilePicture ||
-          "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
-        }
-        alt="Profile Picture"
-        className="rounded-full w-7 h-7 object-cover"
-      />
-    </ul>
+    <nav className="flex justify-around w-full md:w-auto md:gap-x-4">
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <MdHomeFilled size={28} className="cursor-pointer" />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <FiSend size={28} className="cursor-pointer text-instagram-primary" />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <TbSquarePlus
+          size={28}
+          className="cursor-pointer text-instagram-primary"
+        />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <MdOutlineExplore
+          size={28}
+          className="cursor-pointer text-instagram-primary"
+        />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <FiHeart size={28} className="cursor-pointer text-instagram-primary" />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <Image
+          srcURL={
+            profilePicture ||
+            "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
+          }
+          alt="Profile Picture"
+          className="rounded-full w-7 h-7 object-cover"
+        />
+      </Link>
+    </nav>
   );
 }
 
