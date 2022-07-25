@@ -19,7 +19,7 @@ function Landing() {
         to={appRoutes.INSTAGRAM_HOME}
         className="flex flex-col gap-y-2 items-center"
       >
-        <FaInstagram className="w-10 h-10 md:w-12 md:h-12" />
+        <FaInstagram className="fill-instagram-primary w-10 h-10 md:w-12 md:h-12" />
         <p className="text-instagram-primary text-sm text-normal">
           Go to Instagram
         </p>

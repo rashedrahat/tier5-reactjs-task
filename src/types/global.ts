@@ -49,6 +49,7 @@ export type PostActionProps = SocialPlatform & {
 
 export type PostCommentsProps = SocialPlatform & {
   userProfilePiture?: string;
+  isLoading?: boolean;
   data: any[];
 };
 
@@ -60,4 +61,8 @@ export type UserCommentBoxProps = SocialPlatform & {
   commentedAt?: number;
   boxClass: string;
   userProfilePitureClass: string;
+};
+
+export type LoaderProps = SocialPlatform & {
+  placeAt: "page" | "block";
 };

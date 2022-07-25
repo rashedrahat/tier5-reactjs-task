@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FiBookmark } from "react-icons/fi";
 import { FaReact, FaLaptopCode } from "react-icons/fa";
@@ -14,6 +14,7 @@ import FacebookSidebar from "../../../layouts/FacebookSidebar";
 import Requests from "../Friends/Requests";
 import Online from "../Friends/Online";
 import appRoutes from "../../../utils/routes";
+import Loader from "../../../components/ui/Loader";
 
 type MainContentProps = {
   name: string;
@@ -100,48 +101,59 @@ function SuggestedAndShortcuts() {
 }
 
 function Home() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { user, posts, friends } = data;
 
+  useEffect(() => {
+    window.setTimeout(() => setIsLoading(!isLoading), 1000);
+  }, []);
+
   return (
-    <div
-      className={posts?.length === 0 ? `h-screen` : `h-auto`}
-      style={{ backgroundColor: "#DADDE1" }}
-    >
-      <div className="hidden lg:block left-area">
-        <div className="flex h-full w-full">
-          <FacebookSidebar profilePicture={user.profilePicture} />
-          <SuggestedAndShortcuts />
+    <div>
+      {isLoading ? (
+        <Loader placeAt="page" forWhich="Facebook" />
+      ) : (
+        <div
+          className={posts?.length === 0 ? `h-screen` : `h-auto`}
+          style={{ backgroundColor: "#DADDE1" }}
+        >
+          <div className="hidden lg:block left-area">
+            <div className="flex h-full w-full">
+              <FacebookSidebar profilePicture={user.profilePicture} />
+              <SuggestedAndShortcuts />
+            </div>
+          </div>
+          <div className="block lg:hidden pt-9">
+            <FacebookHeader />
+            <div className="container mx-auto py-5 flex flex-col gap-y-5">
+              <MainContent
+                name={user.name}
+                profilePicture={user.profilePicture}
+                posts={posts}
+              />
+            </div>
+          </div>
+          <div className="hidden lg:block">
+            <div className="middle-area p-5 flex flex-col gap-y-5">
+              <MainContent
+                name={user.name}
+                profilePicture={user.profilePicture}
+                posts={posts}
+              />
+            </div>
+          </div>
+          <div className="hidden lg:block right-area no-scrollbar">
+            <div className="flex flex-col gap-y-3 py-5 pr-5">
+              <Requests
+                heading="Friends Requests"
+                type="In"
+                data={friends.request.slice(0, 1)}
+              />
+              <Online data={friends.online} />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="block lg:hidden pt-9">
-        <FacebookHeader />
-        <div className="container mx-auto py-5 flex flex-col gap-y-5">
-          <MainContent
-            name={user.name}
-            profilePicture={user.profilePicture}
-            posts={posts}
-          />
-        </div>
-      </div>
-      <div className="hidden lg:block">
-        <div className="middle-area p-5 flex flex-col gap-y-5">
-          <MainContent
-            name={user.name}
-            profilePicture={user.profilePicture}
-            posts={posts}
-          />
-        </div>
-      </div>
-      <div className="hidden lg:block right-area no-scrollbar">
-        <div className="flex flex-col gap-y-3 py-5 pr-5">
-          <Requests
-            heading="Friends Requests"
-            type="In"
-            data={friends.request.slice(0, 1)}
-          />
-          <Online data={friends.online} />
-        </div>
-      </div>
+      )}
     </div>
   );
 }
