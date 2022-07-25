@@ -36,7 +36,7 @@ function MainContent({ friends }: MainContentProps) {
         type="Out"
         data={friends.request}
       />
-      <div className="block lg:hidden">
+      <div className="block lg:hidden no-scrollbar">
         <Online data={friends.online} />
       </div>
     </>
@@ -89,7 +89,7 @@ function Friends() {
           <Misc />
         </div>
       </div>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden pt-9">
         <FacebookHeader />
         <div className="container mx-auto py-5 flex flex-col gap-y-5">
           <MainContent friends={friends} />
@@ -100,7 +100,7 @@ function Friends() {
           <MainContent friends={friends} />
         </div>
       </div>
-      <div className="hidden lg:block right-area">
+      <div className="hidden lg:block right-area no-scrollbar">
         <div className="flex flex-col gap-y-3 py-5 px-5">
           <Online data={friends.online} />
         </div>

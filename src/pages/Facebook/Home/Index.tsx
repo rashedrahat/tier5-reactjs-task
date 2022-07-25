@@ -113,7 +113,7 @@ function Home() {
           <SuggestedAndShortcuts />
         </div>
       </div>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden pt-9">
         <FacebookHeader />
         <div className="container mx-auto py-5 flex flex-col gap-y-5">
           <MainContent
@@ -132,7 +132,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="hidden lg:block right-area">
+      <div className="hidden lg:block right-area no-scrollbar">
         <div className="flex flex-col gap-y-3 py-5 pr-5">
           <Requests
             heading="Friends Requests"

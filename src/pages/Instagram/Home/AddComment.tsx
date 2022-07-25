@@ -24,7 +24,7 @@ function AddComment() {
       </div>
       <Button
         className={`text-base font-semibold text-instagram-blue ${
-          comment ? `` : `opacity-50`
+          comment ? `` : `opacity-50 cursor-not-allowed`
         }`}
         disabled={comment === ""}
         name="Post"

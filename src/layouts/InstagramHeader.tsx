@@ -48,25 +48,19 @@ function NavLinks({ profilePicture }: NavLinksProps) {
   return (
     <nav className="flex justify-around w-full md:w-auto md:gap-x-4">
       <Link to={appRoutes.INSTAGRAM_HOME}>
-        <MdHomeFilled size={28} className="cursor-pointer" />
+        <MdHomeFilled size={28} />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
-        <FiSend size={28} className="cursor-pointer text-instagram-primary" />
+        <FiSend size={28} className="text-instagram-primary" />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
-        <TbSquarePlus
-          size={28}
-          className="cursor-pointer text-instagram-primary"
-        />
+        <TbSquarePlus size={28} className="text-instagram-primary" />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
-        <MdOutlineExplore
-          size={28}
-          className="cursor-pointer text-instagram-primary"
-        />
+        <MdOutlineExplore size={28} className="text-instagram-primary" />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
-        <FiHeart size={28} className="cursor-pointer text-instagram-primary" />
+        <FiHeart size={28} className="text-instagram-primary" />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
         <Image
@@ -93,11 +87,13 @@ function InstagramHeader({ profilePicture }: InstagramHeaderProps) {
         <NavLinks profilePicture={profilePicture} />
       </div>
       <div className="bg-white shadow hidden md:flex justify-evenly items-center w-full h-16">
-        <Image
-          srcURL="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"
-          alt="Profile Picture"
-          className="w-auto h-10"
-        />
+        <Link to={appRoutes.INSTAGRAM_HOME}>
+          <Image
+            srcURL="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"
+            alt="Profile Picture"
+            className="w-auto h-10"
+          />
+        </Link>
         <SearchBar />
         <NavLinks profilePicture={profilePicture} />
       </div>

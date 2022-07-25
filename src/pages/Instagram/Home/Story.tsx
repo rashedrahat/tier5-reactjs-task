@@ -10,7 +10,7 @@ type StoryProps = {
 
 function Story({ readonly, accountName, accountAvatarURL }: StoryProps) {
   return (
-    <div className="flex flex-col gap-y-1 items-center cursor-pointer">
+    <div className="flex flex-col gap-y-1 items-center cursor-not-allowed">
       <div
         className={`relative rounded-full w-16 h-16 flex justify-center items-center ${
           readonly ? `bg-gradient-to-r to-yellow-500 from-pink-500` : ``
