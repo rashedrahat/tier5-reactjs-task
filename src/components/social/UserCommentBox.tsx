@@ -43,7 +43,7 @@ function Facebook({
         </div>
         {commentedAt && (
           <p className="px-3 text-xs text-facebook-normal mt-1">
-            {helpers.formatTheDateInRelativeTime(commentedAt, "day")}
+            {helpers.getTimeAgo(commentedAt)}
           </p>
         )}
       </div>
@@ -71,7 +71,7 @@ function Instagram({
         </p>
         {commentedAt && (
           <p className="text-xs text-instagram-secondary">
-            {helpers.formatTheDateInRelativeTime(commentedAt, "hour")}
+            {helpers.getTimeAgo(commentedAt)}
           </p>
         )}
       </div>

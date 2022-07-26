@@ -11,7 +11,7 @@ import { PostProps } from "../../../types/global";
 type TopContentOfCardProps = {
   name: string;
   profilePicture: string;
-  postedOn: number;
+  postedOn: string;
 };
 
 function TopContentOfCard({
@@ -33,7 +33,7 @@ function TopContentOfCard({
         <div>
           <p className="text-sm text-facebook-dark font-semibold">{name}</p>
           <p className="text-xs text-facebook-normal font-light">
-            {helpers.formatTheDateInRelativeTime(postedOn, "day")}
+            {helpers.getTimeAgo(postedOn)}
           </p>
         </div>
       </div>

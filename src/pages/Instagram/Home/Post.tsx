@@ -60,7 +60,7 @@ function TopContentOfCard({
 
 type BottomContentOfCardProps = {
   description: string;
-  postedOn: number;
+  postedOn: string;
   likes: number;
   liked: boolean;
   comments: any[];
@@ -104,7 +104,7 @@ function BottomContentOfCard({
           }`}</p>
         )}
         <p className="text-xs text-instagram-secondary font-normal uppercase">
-          {helpers.formatTheDateInRelativeTime(postedOn, "day")}
+          {helpers.getTimeAgo(postedOn)}
         </p>
       </div>
       {showComments && <PostComments forWhich="Instagram" data={comments} />}

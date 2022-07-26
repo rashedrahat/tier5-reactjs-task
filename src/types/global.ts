@@ -31,7 +31,7 @@ export type PostProps = {
   user: User;
   description: string;
   image: string;
-  postedOn: number;
+  postedOn: string;
   likes: number;
   liked: boolean;
   comments: any[];
@@ -58,7 +58,7 @@ export type UserCommentBoxProps = SocialPlatform & {
   userProfilePictureURL: string;
   userName?: string;
   comment: string;
-  commentedAt?: number;
+  commentedAt?: string;
   boxClass: string;
   userProfilePitureClass: string;
 };

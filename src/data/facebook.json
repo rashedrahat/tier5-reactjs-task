@@ -12,7 +12,7 @@
         "name": "Adam",
         "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
       },
-      "postedOn": 1658433268399,
+      "postedOn": "1658433268399",
       "description": "What a beautiful flower it is! Isn't it?",
       "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
       "likes": 10,
@@ -20,7 +20,7 @@
       "comments": [
         {
           "text": "How are you!",
-          "createdAt": 1658480500227,
+          "createdAt": "1658480500227",
           "user": {
             "username": "adam",
             "name": "Adam",
@@ -29,7 +29,7 @@
         },
         {
           "text": "Hello buddy! Beautifull flower. ",
-          "createdAt": 1658480500227,
+          "createdAt": "1658480500227",
           "user": {
             "username": "jhonson",
             "name": "Jhonson D Rock",
@@ -45,7 +45,7 @@
         "name": "Jhonson D Rock",
         "profilePicture": "https://minimaltoolkit.com/images/randomdata/male/2.jpg"
       },
-      "postedOn": 1658470925106,
+      "postedOn": "1658470925106",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "image": "",
       "likes": 5,
@@ -59,7 +59,7 @@
         "name": "Adam",
         "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
       },
-      "postedOn": 1658470925106,
+      "postedOn": "1658470925106",
       "description": "What a beautiful flower it is! Isn't it?",
       "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
       "likes": 10,
@@ -67,7 +67,7 @@
       "comments": [
         {
           "text": "Hello!",
-          "createdAt": 1658480500227,
+          "createdAt": "1658480500227",
           "user": {
             "username": "adam",
             "name": "Adam",
@@ -83,7 +83,7 @@
         "name": "Adam",
         "profilePicture": "https://www.archiefoundationhome.org.uk/wp-content/uploads/2020/05/profile-photo-social-media.jpg"
       },
-      "postedOn": 1658470925106,
+      "postedOn": "1658470925106",
       "description": "What a beautiful flower it is! Isn't it?",
       "image": "https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659__340.jpg",
       "likes": 10,
@@ -91,7 +91,7 @@
       "comments": [
         {
           "text": "Hello!",
-          "createdAt": 1658480500227,
+          "createdAt": "1658480500227",
           "user": {
             "username": "adam",
             "name": "Adam",
