@@ -5,7 +5,7 @@ import UserCommentBox from "./UserCommentBox";
 
 function Facebook({ userProfilePiture, isLoading, data }: PostCommentsProps) {
   return (
-    <div className="flex flex-col px-4 gap-y-4">
+    <div className="flex flex-col px-4 gap-y-4 max-h-52 no-scrollbar overflow-y-auto">
       <hr />
       {isLoading ? (
         <Loader placeAt="block" forWhich="Facebook" />
