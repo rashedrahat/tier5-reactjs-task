@@ -5,8 +5,3 @@ export type PeopleProps = {
   type?: "Friend" | "Not Friend";
   reqType?: "In" | "Out";
 };
-
-export type ActiveUserProps = {
-  name: string;
-  profilePicture: string;
-};

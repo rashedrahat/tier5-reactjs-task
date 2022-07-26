@@ -66,3 +66,11 @@ export type UserCommentBoxProps = SocialPlatform & {
 export type LoaderProps = SocialPlatform & {
   placeAt: "page" | "block";
 };
+
+export type StatusAvatarProps = SocialPlatform & {
+  name: string;
+  profilePicture: string;
+  readonly?: boolean;
+  type?: string;
+  contentURL?: string;
+};

@@ -1,32 +1,28 @@
 import React from "react";
-import Story from "./Story";
-
-type SingleStory = {
-  accountName: string;
-  accountAvatarURL: string;
-  type: string;
-  contentURL: string;
-};
+import StatusAvatar from "../../../components/social/StatusAvatar";
+import { StatusAvatarProps } from "../../../types/global";
 
 type StoriesProps = {
   currUserAvatar: string;
-  data: SingleStory[];
+  data: StatusAvatarProps[];
 };
 
 function Stories({ currUserAvatar, data }: StoriesProps) {
   return (
     <div className="flex w-full overflow-x-auto stories-scrollbar border-b md:border border-gray-300 md:rounded-lg h-auto p-4 gap-x-4">
-      <Story
+      <StatusAvatar
         readonly={false}
-        accountName="Your story"
-        accountAvatarURL={currUserAvatar}
+        forWhich="Instagram"
+        name="Your story"
+        profilePicture={currUserAvatar}
       />
       {data?.map((story) => {
         return (
-          <Story
+          <StatusAvatar
             readonly
-            accountName={story.accountName}
-            accountAvatarURL={story.accountAvatarURL}
+            forWhich="Instagram"
+            name={story.name}
+            profilePicture={story.profilePicture}
           />
         );
       })}

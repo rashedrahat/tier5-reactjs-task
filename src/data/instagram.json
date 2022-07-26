@@ -1,14 +1,14 @@
 {
   "stories": [
     {
-      "accountName": "goal.cast",
-      "accountAvatarURL": "https://yt3.ggpht.com/ytc/AKedOLRgAQRfHqh4ZNJ-nMiG916vPpWrdxQZaKs2yOzllA=s900-c-k-c0x00ffffff-no-rj",
+      "name": "goal.cast",
+      "profilePicture": "https://yt3.ggpht.com/ytc/AKedOLRgAQRfHqh4ZNJ-nMiG916vPpWrdxQZaKs2yOzllA=s900-c-k-c0x00ffffff-no-rj",
       "type": "image",
       "contentURL": "https://i.pinimg.com/736x/a1/a2/5d/a1a25d2aa8061d1f60add7c64b94bbde.jpg"
     },
     {
-      "accountName": "psg",
-      "accountAvatarURL": "https://play-lh.googleusercontent.com/0iYNKjXYoTIVQUTwOaXRAKpdbMISKIivCTMi8WxWi9TFqaFkMOxBhigqiyfpG8rzng",
+      "name": "psg",
+      "profilePicture": "https://play-lh.googleusercontent.com/0iYNKjXYoTIVQUTwOaXRAKpdbMISKIivCTMi8WxWi9TFqaFkMOxBhigqiyfpG8rzng",
       "type": "image",
       "contentURL": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt2382bb408a84e2d4/62d649b00cca5a10289a6942/goal---web-two-way-split--9c967cca-aff2-4480-9fde-3eb30fbd4b8f.jpeg"
     }
