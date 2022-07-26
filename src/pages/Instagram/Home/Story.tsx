@@ -27,7 +27,9 @@ function Story({ readonly, accountName, accountAvatarURL }: StoryProps) {
           </div>
         )}
       </div>
-      <p className="text-sm text-instagram-tertiary">{accountName}</p>
+      <p className="text-sm text-instagram-tertiary text-center">
+        {accountName}
+      </p>
     </div>
   );
 }
