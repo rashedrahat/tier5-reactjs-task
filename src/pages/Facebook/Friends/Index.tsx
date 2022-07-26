@@ -6,7 +6,7 @@ import { AiFillGift } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Online from "./Online";
 import Requests from "./Requests";
-import * as data from "../../../data/facebook.json";
+import data from "../../../data/facebook";
 import FacebookSidebar from "../../../layouts/FacebookSidebar";
 import FacebookHeader from "../../../layouts/FacebookHeader";
 import appRoutes from "../../../utils/routes";

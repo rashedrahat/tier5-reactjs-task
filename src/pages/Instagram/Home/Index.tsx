@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InstagramHeader from "../../../layouts/InstagramHeader";
 import Stories from "./Stories";
-import * as data from "../../../data/instagram.json";
+import data from "../../../data/instagram";
 import AccountSwitch from "./AccountSwitch";
 import Suggestions from "./Suggestions";
 import Posts from "./Posts";

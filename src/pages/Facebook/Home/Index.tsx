@@ -8,7 +8,7 @@ import { BiMoviePlay, BiFlag, BiCalendar } from "react-icons/bi";
 import { BsSoundwave } from "react-icons/bs";
 import FacebookHeader from "../../../layouts/FacebookHeader";
 import WhatsOnYourMind from "./WhatsOnYourMind";
-import * as data from "../../../data/facebook.json";
+import data from "../../../data/facebook";
 import Posts from "./Posts";
 import FacebookSidebar from "../../../layouts/FacebookSidebar";
 import Requests from "../Friends/Requests";
