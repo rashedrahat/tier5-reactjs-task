@@ -15,14 +15,21 @@ import Requests from "../Friends/Requests";
 import Online from "../Friends/Online";
 import appRoutes from "../../../utils/routes";
 import Loader from "../../../components/ui/Loader";
+import ActiveUsers from "./ActiveUsers";
 
 type MainContentProps = {
   name: string;
   profilePicture: string;
+  activeUsers: any[];
   posts: any[];
 };
 
-function MainContent({ name, profilePicture, posts }: MainContentProps) {
+function MainContent({
+  name,
+  profilePicture,
+  activeUsers,
+  posts,
+}: MainContentProps) {
   return (
     <>
       <WhatsOnYourMind
@@ -32,6 +39,7 @@ function MainContent({ name, profilePicture, posts }: MainContentProps) {
           "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
         }
       />
+      {activeUsers?.length > 0 && <ActiveUsers data={activeUsers} />}
       <Posts data={posts} />
     </>
   );
@@ -129,6 +137,7 @@ function Home() {
               <MainContent
                 name={user.name}
                 profilePicture={user.profilePicture}
+                activeUsers={friends.online}
                 posts={posts}
               />
             </div>
@@ -137,6 +146,7 @@ function Home() {
             <div className="middle-area p-5 flex flex-col gap-y-5">
               <MainContent
                 name={user.name}
+                activeUsers={friends.online}
                 profilePicture={user.profilePicture}
                 posts={posts}
               />

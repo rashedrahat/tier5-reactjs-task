@@ -24,3 +24,17 @@
 .right-area {
   right: 0;
 }
+
+.online-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: whitesmoke;
+}
+
+.online-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.online-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e3e6e9;
+}
