@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookMessenger, FaSearch } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
 import { IoNotifications } from "react-icons/io5";
 import { HiUsers, HiUserGroup } from "react-icons/hi";
 import { BsGrid3X3GapFill } from "react-icons/bs";
@@ -68,6 +69,9 @@ function FacebookSidebar({ profilePicture }: FacebookSidebarProps) {
       </Link>
       <Link to={appRoutes.FACEBOOK_HOME}>
         <HiUserGroup size={24} className="fill-facebook-dark" />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <RiInstagramFill size={27} className="fill-facebook-dark" />
       </Link>
     </nav>
   );

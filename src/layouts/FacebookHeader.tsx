@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaInstagram } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { AiOutlineHome } from "react-icons/ai";
 import { RiMessengerLine } from "react-icons/ri";
@@ -41,6 +41,9 @@ function FacebookHeader() {
       </Link>
       <Link to={appRoutes.FACEBOOK_HOME}>
         <GoSearch size={20} color="white" />
+      </Link>
+      <Link to={appRoutes.INSTAGRAM_HOME}>
+        <FaInstagram size={20} color="white" />
       </Link>
       <Link to={appRoutes.FACEBOOK_HOME}>
         <FaBars size={20} color="white" />

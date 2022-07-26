@@ -3,6 +3,7 @@ import { MdHomeFilled, MdOutlineExplore } from "react-icons/md";
 import { FiSend, FiHeart } from "react-icons/fi";
 import { TbSquarePlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { RiFacebookCircleLine } from "react-icons/ri";
 import appRoutes from "../utils/routes";
 import Image from "../components/ui/Image";
 import Input from "../components/form/Input";
@@ -46,7 +47,7 @@ type NavLinksProps = {
 
 function NavLinks({ profilePicture }: NavLinksProps) {
   return (
-    <nav className="flex justify-around w-full md:w-auto md:gap-x-4">
+    <nav className="flex justify-around items-center w-full md:w-auto md:gap-x-4">
       <Link to={appRoutes.INSTAGRAM_HOME}>
         <MdHomeFilled size={28} />
       </Link>
@@ -61,6 +62,9 @@ function NavLinks({ profilePicture }: NavLinksProps) {
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
         <FiHeart size={28} className="text-instagram-primary" />
+      </Link>
+      <Link to={appRoutes.FACEBOOK_HOME}>
+        <RiFacebookCircleLine size={30} className="text-instagram-primary" />
       </Link>
       <Link to={appRoutes.INSTAGRAM_HOME}>
         <Image
