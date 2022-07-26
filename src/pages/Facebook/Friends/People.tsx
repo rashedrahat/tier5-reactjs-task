@@ -23,12 +23,12 @@ function People({
               "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
             }
             alt="Profile Picture"
-            className="rounded-full w-12 h-12 object-cover"
+            className="rounded-full w-10 h-10 object-cover"
           />
           <div>
-            <p className="text-base text-facebook-dark font-normal">{name}</p>
+            <p className="text-sm text-facebook-dark font-normal">{name}</p>
             {numOfMutualFrnd && numOfMutualFrnd > 0 && (
-              <p className="text-sm text-facebook-dark font-light">{`${numOfMutualFrnd} mutual friend${
+              <p className="text-xs text-facebook-dark font-light">{`${numOfMutualFrnd} mutual friend${
                 numOfMutualFrnd > 1 ? `s` : ``
               }`}</p>
             )}

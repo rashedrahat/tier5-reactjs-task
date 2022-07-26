@@ -21,10 +21,9 @@ function Home() {
         <Loader placeAt="page" forWhich="Instagram" />
       ) : (
         <div
-          className={
+          className={`bg-instagram-body ${
             posts?.length === 0 ? `h-screen main-content-wrapper` : `h-auto`
-          }
-          style={{ backgroundColor: "#FAFAFA" }}
+          }`}
         >
           <InstagramHeader profilePicture={user.profilePicture} />
           <div className="md:py-8 mt-14 md:mt-16">

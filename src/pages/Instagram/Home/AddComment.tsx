@@ -12,7 +12,7 @@ function AddComment() {
         <Image
           srcURL="https://minimaltoolkit.com/images/randomdata/male/38.jpg"
           alt="Profile Picture"
-          className="w-6 h-6 object-cover rounded-full"
+          className="w-8 h-8 object-cover rounded-full"
         />
         <Input
           className="border-none w-full py-2 placeholder:text-instagram-secondary text-instagram-primary text-base focus:outline-none"

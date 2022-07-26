@@ -37,9 +37,6 @@ function MainContent({ friends }: MainContentProps) {
         type="Out"
         data={friends.request}
       />
-      <div className="block lg:hidden no-scrollbar">
-        <Online data={friends.online} />
-      </div>
     </>
   );
 }
@@ -51,26 +48,26 @@ function Misc() {
         <p className="text-lg text-facebook-dark font-semibold">Friends</p>
         <ul className="flex flex-col gap-y-3">
           <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
-            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
-              <RiUserShared2Fill size={24} />
+            <div className="flex items-center justify-center h-8 w-8 rounded-full bg-facebook-light">
+              <RiUserShared2Fill size={22} />
             </div>
             <Link to={appRoutes.FACEBOOK_FRIENDS}>Friend Requests</Link>
           </li>
           <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
-            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
-              <FaUserPlus size={24} />
+            <div className="flex items-center justify-center h-8 w-8 rounded-full bg-facebook-light">
+              <FaUserPlus size={22} />
             </div>
             <Link to={appRoutes.FACEBOOK_FRIENDS}>Suggestions</Link>
           </li>
           <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
-            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
-              <AiFillGift size={24} />
+            <div className="flex items-center justify-center h-8 w-8 rounded-full bg-facebook-light">
+              <AiFillGift size={22} />
             </div>
             <Link to={appRoutes.FACEBOOK_FRIENDS}>Birthdays</Link>
           </li>
           <li className="flex gap-x-2 items-center text-facebook-dark text-base font-normal">
-            <div className="flex items-center justify-center h-9 w-9 rounded-full bg-facebook-light">
-              <BsFillPersonLinesFill size={24} />
+            <div className="flex items-center justify-center h-8 w-8 rounded-full bg-facebook-light">
+              <BsFillPersonLinesFill size={22} />
             </div>
             <Link to={appRoutes.FACEBOOK_FRIENDS}>Custom List</Link>
           </li>
@@ -93,7 +90,7 @@ function Friends() {
       {isLoading ? (
         <Loader placeAt="page" forWhich="Facebook" />
       ) : (
-        <div style={{ backgroundColor: "#DADDE1" }}>
+        <div className="bg-facebook-body">
           <div className="hidden lg:block left-area">
             <div className="flex h-full w-full">
               <FacebookSidebar profilePicture={user.profilePicture} />

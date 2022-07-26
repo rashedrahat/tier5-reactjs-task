@@ -26,7 +26,7 @@ function FacebookSidebar({ profilePicture }: FacebookSidebarProps) {
             "https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar-300x300.jpg"
           }
           alt="Profile Picture"
-          className="rounded-full w-9 h-9 object-cover"
+          className="rounded-full w-10 h-10 object-cover"
         />
       </Link>
       <Link to={appRoutes.FACEBOOK_HOME}>

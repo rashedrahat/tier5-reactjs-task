@@ -27,7 +27,7 @@ function Suggestions({ data }: SuggestionsProps) {
           See All
         </Link>
       </div>
-      <div className="flex flex-col gap-y-3 px-2">
+      <div className="flex flex-col gap-y-3">
         {data?.map((user) => {
           const { username, name, profilePicture } = user;
           return (

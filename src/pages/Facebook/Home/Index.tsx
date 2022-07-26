@@ -122,8 +122,9 @@ function Home() {
         <Loader placeAt="page" forWhich="Facebook" />
       ) : (
         <div
-          className={posts?.length === 0 ? `h-screen` : `h-auto`}
-          style={{ backgroundColor: "#DADDE1" }}
+          className={`bg-facebook-body ${
+            posts?.length === 0 ? `h-screen` : `h-auto`
+          }`}
         >
           <div className="hidden lg:block left-area">
             <div className="flex h-full w-full">

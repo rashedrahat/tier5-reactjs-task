@@ -9,7 +9,7 @@ function NotFound() {
       <TbError404 size={64} />
       <Link
         to={appRoutes.LANDING}
-        className="bg-gradient-to-r from-blue-300 to-blue-600 hover:from-pink-500 hover:to-yellow-500 text-base font-normal rounded-full p-3"
+        className="bg-gradient-to-r from-blue-300 to-blue-600 hover:from-pink-500 hover:to-yellow-500 text-base font-normal rounded-lg p-3"
       >
         Take me Home
       </Link>

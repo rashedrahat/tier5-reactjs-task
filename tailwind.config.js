@@ -23,12 +23,14 @@ module.exports = {
           light: "#E3E6E9",
           normal: "#64676B",
           dark: "#050505",
+          body: "#F1F2F5",
         },
         instagram: {
           primary: "#262626",
           secondary: "#8E8E8E",
           tertiary: "#64676B",
           blue: "#0095F6",
+          body: "#FAFAFA",
         },
       }),
       height: {

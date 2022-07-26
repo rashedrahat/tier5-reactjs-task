@@ -12,10 +12,10 @@ function Loader({ placeAt, forWhich }: LoaderProps) {
       {placeAt === "page" ? (
         <>
           {forWhich === "Facebook" && (
-            <FaFacebook className="fill-facebook-primary w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20" />
+            <FaFacebook className="fill-facebook-primary w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
           )}
           {forWhich === "Instagram" && (
-            <FaInstagram className="fill-instagram-primary w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20" />
+            <FaInstagram className="fill-instagram-primary w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
           )}
         </>
       ) : (
