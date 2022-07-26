@@ -13,6 +13,7 @@ function Facebook({ userProfilePiture, isLoading, data }: PostCommentsProps) {
         <div className="flex flex-col gap-y-2">
           <div className="mb-2">
             <UserCommentBox
+              key={Math.floor(Math.random() * 100)}
               forWhich="Facebook"
               actionType="Write"
               userProfilePictureURL={
@@ -28,6 +29,7 @@ function Facebook({ userProfilePiture, isLoading, data }: PostCommentsProps) {
             const { user, text, createdAt } = comment;
             return (
               <UserCommentBox
+                key={Math.floor(Math.random() * 100)}
                 forWhich="Facebook"
                 actionType="See"
                 userProfilePictureURL={
@@ -59,6 +61,7 @@ function Instagram({ isLoading, data }: PostCommentsProps) {
             const { user, text, createdAt } = comment;
             return (
               <UserCommentBox
+                key={Math.floor(Math.random() * 100)}
                 forWhich="Instagram"
                 userProfilePictureURL={
                   user.profilePicture ||
@@ -86,8 +89,8 @@ function PostComments({
   const [isLoading, setIsLoading] = useState<boolean>(data?.length > 0);
 
   useEffect(() => {
-    window.setTimeout(() => setIsLoading(!isLoading), 1000);
-  }, []);
+    if (isLoading) window.setTimeout(() => setIsLoading(!isLoading), 1000);
+  }, [isLoading]);
 
   return (
     <>

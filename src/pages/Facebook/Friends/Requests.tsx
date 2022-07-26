@@ -35,6 +35,7 @@ function Requests({ heading, type, data }: RequestsProps) {
               const { name, profilePicture, numOfMutualFrnd } = req;
               return (
                 <People
+                  key={Math.floor(Math.random() * 100)}
                   name={name}
                   profilePicture={profilePicture}
                   numOfMutualFrnd={numOfMutualFrnd}

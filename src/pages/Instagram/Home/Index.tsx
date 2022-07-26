@@ -12,8 +12,8 @@ function Home() {
   const { user, stories, suggestions, posts } = data;
 
   useEffect(() => {
-    window.setTimeout(() => setIsLoading(!isLoading), 1000);
-  }, []);
+    if (isLoading) window.setTimeout(() => setIsLoading(!isLoading), 1000);
+  }, [isLoading]);
 
   return (
     <div>

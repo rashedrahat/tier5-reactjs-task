@@ -27,6 +27,7 @@ function Posts({ data }: PostsProps) {
             } = post;
             return (
               <Post
+                key={Math.floor(Math.random() * 100)}
                 id={id}
                 user={user}
                 description={description}

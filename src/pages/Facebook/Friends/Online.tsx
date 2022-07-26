@@ -25,6 +25,7 @@ function Online({ data }: OnlineProps) {
               const { name, profilePicture, numOfMutualFrnd } = req;
               return (
                 <People
+                  key={Math.floor(Math.random() * 100)}
                   name={name}
                   profilePicture={profilePicture}
                   numOfMutualFrnd={numOfMutualFrnd}

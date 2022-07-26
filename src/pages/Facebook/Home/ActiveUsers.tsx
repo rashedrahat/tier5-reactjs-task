@@ -12,6 +12,7 @@ function ActiveUsers({ data }: ActiveUsersProps) {
       {data?.map((user) => {
         return (
           <StatusAvatar
+            key={Math.floor(Math.random() * 100)}
             forWhich="Facebook"
             name={user.name}
             profilePicture={user.profilePicture}

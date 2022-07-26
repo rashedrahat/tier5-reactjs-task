@@ -32,6 +32,7 @@ function Suggestions({ data }: SuggestionsProps) {
           const { username, name, profilePicture } = user;
           return (
             <UserCard
+              key={Math.floor(Math.random() * 100)}
               username={username}
               name={name}
               profilePicture={profilePicture}
